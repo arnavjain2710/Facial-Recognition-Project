@@ -24,25 +24,6 @@ Before you start, ensure you have the following installed:
 - React
 - Microsoft C++ Build Tools
 
-## Installation and Setup
-
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/Aviral-Sharma-2578/CS203-face-recognition.git
-
-2. Install Dependencies
-
-   ```bash
-   # server dependencies
-   cd server
-   pip install -r requirements.txt
-
-   # client dependencies
-   cd ../client
-   npm install
-
 3. Run the application
 
    ```bash
