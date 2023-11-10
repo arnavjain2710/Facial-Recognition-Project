@@ -14,27 +14,12 @@ This project is an attendance management system using the power of InsightFace f
 - Facial recognition for attendance tracking
 - User-friendly interface
 
-## Prerequisites
-
-Before you start, ensure you have the following installed:
-
-- Python 3.x
-- InsightFace library
-- node.js
-- React
-- Microsoft C++ Build Tools
-
 
 ## Description
 1. This project takes a image of a group of people as input.
 2. Does facial detection using insightface.
 3. Uses insightface for face recognition.
 4. Gives .csv and json file as output containing whether an individual is present or absent in that particular photo.
-
-## Future Improvements
-
-* Database Connection (preferably MongoDB)
-* Execution time of the model
 
 ## Acknowledgements
 * InsightFace developers and contributors.
