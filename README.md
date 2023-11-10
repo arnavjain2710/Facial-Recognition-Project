@@ -24,16 +24,6 @@ Before you start, ensure you have the following installed:
 - React
 - Microsoft C++ Build Tools
 
-3. Run the application
-
-   ```bash
-   # server
-   cd ../server
-   uvicorn main:app --reload
-
-   # client
-   cd ../client
-   npm start
 
 ## Description
 1. This project takes a image of a group of people as input.
