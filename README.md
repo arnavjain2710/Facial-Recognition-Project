@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Face-Recognition Based Attendance System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Team Details:
+- Bharat Kaurav (220001017)
+- Aditya Yadav (220001006)
+- Arnav Nirmal Jain (220002018)
+  
+## Overview
 
-## Available Scripts
+This project is an attendance management system using the power of InsightFace for facial recognition. The app allows users to mark attendance by capturing and analyzing facial features.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Facial recognition for attendance tracking
+- User-friendly interface
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Before you start, ensure you have the following installed:
 
-### `npm test`
+- Python 3.x
+- InsightFace library
+- node.js
+- React
+- Microsoft C++ Build Tools
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation and Setup
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   git clone https://github.com/Aviral-Sharma-2578/CS203-face-recognition.git
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Install Dependencies
 
-### `npm run eject`
+   ```bash
+   # server dependencies
+   cd server
+   pip install -r requirements.txt
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   # client dependencies
+   cd ../client
+   npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Run the application
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   # server
+   cd ../server
+   uvicorn main:app --reload
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   # client
+   cd ../client
+   npm start
 
-## Learn More
+## Description
+1. This project takes a image of a group of people as input.
+2. Does facial detection using insightface.
+3. Uses insightface for face recognition.
+4. Gives .csv and json file as output containing whether an individual is present or absent in that particular photo.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Future Improvements
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* Database Connection (preferably MongoDB)
+* Execution time of the model
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Acknowledgements
+* InsightFace developers and contributors.
+* FastAPI, ReactJS, and TailwindCSS communities for their valuable tools and frameworks.
