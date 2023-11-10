@@ -14,6 +14,35 @@ This project is an attendance management system using the power of InsightFace f
 - Facial recognition for attendance tracking
 - User-friendly interface
 
+## Installation and Setup
+
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/arnavjain2710/Facial-Recognition-Project.git
+
+2. Install Dependencies
+
+   ```bash
+   # server dependencies
+   cd server
+   pip install -r requirements.txt
+
+   # client dependencies
+   cd ../client
+   npm install
+
+3. Run the application
+
+   ```bash
+   # server
+   cd ../server
+   uvicorn main:app --reload
+
+   # client
+   cd ../client
+   npm start
 
 ## Description
 1. This project takes a image of a group of people as input.
